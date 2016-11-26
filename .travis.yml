@@ -1,12 +1,17 @@
 language: java
 
-jdk: 
-   - oraclejdk8
+jdk:
+  - oraclejdk8
+
+services:
+  - docker
 
 cache:
   directories:
   - $HOME/.m2
 
+install:
+ - docker pull mongo
 
 script:
- - mvn -f MongoDBexamples/pom.xml clean verify
+ - mvn -f com.examples.school/pom.xml clean verify
