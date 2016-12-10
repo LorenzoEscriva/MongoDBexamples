@@ -2,7 +2,7 @@ version: '2'
 
 services:
   app:
-    image: MongoDBexamples-app
+    image: school-app
     links:
       - "db:mongo-host"
   db:
