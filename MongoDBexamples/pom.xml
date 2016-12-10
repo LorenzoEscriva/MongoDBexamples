@@ -184,7 +184,7 @@
 									<transformers>
 										<transformer
 											implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-											<mainClass>com.examples.school.app.Main</mainClass>
+											<mainClass>MongoDBexamples.app.Main</mainClass>
 										</transformer>
 									</transformers>
 								</configuration>
