@@ -15,3 +15,4 @@ install:
 
 script:
  - mvn -f MongoDBexamples/pom.xml clean verify
+ - mvn -f MongoDBexamples/pom.xml verify -Pdocker-compose
