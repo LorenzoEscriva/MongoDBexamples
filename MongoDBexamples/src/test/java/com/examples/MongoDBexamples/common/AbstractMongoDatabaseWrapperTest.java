@@ -64,4 +64,10 @@ public abstract class AbstractMongoDatabaseWrapperTest {
 		assertEquals("second", findStudentById.getName());
 	}
 
+	@Test
+	public void testStudentIsSaved() {
+		mongoDatabase.save(new Student("1", "test"));
+		assertTrue(mongoTestHelper.containsStudent("1", "test"));
+	}
+
 }
